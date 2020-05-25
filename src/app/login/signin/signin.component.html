@@ -1,12 +1,11 @@
-<p>Signin</p>
-
+<p>signIn!</p>
 <form (submit)="signIn()">
     <label for="username">Username:</label>
-    <input name="username"  type="text" >
+    <input  type="text" [(ngModel)]="user.userName" name="userName" class="form-control" placeholder="userName" required>
 
     <label for="password">Password:</label>
-    <input name="password" type="text" >
-    <button type="submit">SignIn</button>
+    <input   type="text" [(ngModel)]="user.password" name="password" class="form-control" placeholder="Password" required>
+    <button type="submit">SignIng</button>
 </form>
 
 
